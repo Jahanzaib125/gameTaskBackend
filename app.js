@@ -9,4 +9,11 @@ app.options('*', cors());
 // Route Imports
 const user = require('./routes/userRoute');
 app.use('/api/v1', user);
+
+// app.use(express.static(path.join(__dirname, "./game-task/build")));
+
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "./game-task/build/index.html"));
+//   });
+
 module.exports = app;
